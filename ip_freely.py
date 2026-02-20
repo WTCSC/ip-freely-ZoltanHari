@@ -14,7 +14,7 @@ def ping_host(ip):
 
     # Build ping command 
     # -c 1 → send 1 packet
-    # -W 1 → wait 1 second for response
+    # -W 1 → wait 1 second for response (can be adjusted if 1 second is too short or too long)
     command = ["ping", "-c", "1", "-W", "1", str(ip)]
 
 
